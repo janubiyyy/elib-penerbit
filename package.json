@@ -1,0 +1,45 @@
+{
+  "name": "ELIBU-PENGELOLA",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxt/content": "^1.14.0",
+    "@nuxtjs/auth": "^4.9.1",
+    "@nuxtjs/axios": "^5.13.6",
+    "@nuxtjs/composition-api": "^0.32.0",
+    "@nuxtjs/pwa": "^3.3.5",
+    "bootstrap-select": "^1.13.18",
+    "bootstrap-vue": "^2.21.2",
+    "boxicons": "^2.1.4",
+    "chart.js": "^2.9.4",
+    "chartjs-plugin-labels": "^1.1.0",
+    "ckeditor4-vue": "^2.0.0",
+    "core-js": "^3.15.1",
+    "hchs-vue-charts": "^1.2.8",
+    "inputmask": "^5.0.7",
+    "nuxt": "^2.15.7",
+    "sweetalert2": "^11.3.6",
+    "v-mask": "^2.3.0",
+    "v-money": "^0.8.1",
+    "vue-chartjs": "^3.5.1",
+    "vue-month-picker": "^1.5.1",
+    "vue-monthly-picker": "^0.2.8",
+    "vue-owl-carousel": "^2.0.3",
+    "vue-search-select": "^2.9.5",
+    "vue-select": "^3.16.0",
+    "vue-sweetalert2": "^5.0.2",
+    "vue-the-mask": "^0.11.1",
+    "vue-toastification": "^1.7.14",
+    "vue3-easy-data-table": "^1.4.20"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^5.0.4",
+    "@nuxtjs/vuetify": "^1.12.3"
+  }
+}

@@ -1,0 +1,1507 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    font-family: "Work sans", Helvetica, Arial, sans-serif;
+    scroll-behavior: smooth;
+    color: #FFFFFF  ;
+}
+
+header {
+    height: 75px;
+    background: #fff;
+    width: 100%;
+    align-items: center;
+    top: 0;
+    border-top: 4px solid #324da1;
+    box-shadow: rgba(12, 40, 70, 0.1) 0px 2px 10px 0px;
+}
+
+header img {
+    width: 210px;
+    margin-top: -25px;
+}
+
+.judul-tipe {
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 70px;
+    text-align: center;
+    letter-spacing: -0.03rem;
+    line-height: 1.35 !important;
+    color: #ffff;
+}
+
+.judul-tipe1 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #868686;
+}
+
+.grid-2-30 {
+    display: grid;
+    grid-template-columns: 30% 68%;
+    gap: 15px;
+}
+
+.card-tipe {
+    width: 50%;
+    background: #fff;
+    margin: 0 auto;
+    height: auto;
+    padding: 15px;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    border: 1px solid #e2e2e2;
+    cursor: pointer;
+}
+
+.card-tipe:hover {
+    box-shadow: -2px 2px 19px -14px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -2px 2px 19px -14px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -2px 2px 19px -14px rgba(0, 0, 0, 0.75);
+}
+
+.card-tipe .grid-2 {
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.card-tipe img {
+    width: 100%;
+    padding: 8px;
+}
+
+.card-tipe .teks-tipe {
+    padding: 20px;
+}
+
+.card-tipe .teks-tipe h3 {
+    font-size: 20px;
+    color: #09347a;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.card-tipe .teks-tipe p {
+    font-size: 16px;
+    color: #09347a;
+}
+
+/* Style Lain */
+.bagian-barjalan-bantuan {
+    margin-top: 15px;
+    background: rgb(252, 254, 255);
+    padding: 8px;
+    align-items: center;
+}
+
+.note-bantuan {
+    width: 80%;
+    font-size: 14px;
+}
+
+.contact-bantuan {
+    background: #f5fdff;
+    width: 70%;
+    padding: 15px;
+    border: 1px solid #324da1;
+    border-radius: 20px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.tombol-bantuan {
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.back-bantuan {
+    position: relative;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-image: url('https://assets.tokopedia.net/assets-tokopedia-lite/v2/zeus/kratos/149df038.svg');
+    width: 100%;
+}
+
+.image-bantuan {
+    width: 65%;
+}
+
+.gambar-pertanyaan-bantuan {
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gambar-pertanyaan-bantuan1 {
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.kata-sambutan-bantuan {
+    margin-top: 60px;
+    font-size: 30px;
+}
+
+.card-login .grid-2 {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.checkbox-pass {
+    margin-right: 10px;
+    font-size: 15px;
+}
+
+.checkbox-pass .form-check-input[type="checkbox"] {
+    font: inherit;
+    color: currentColor;
+    width: 0.9rem;
+    height: 0.9rem;
+    margin-top: 5px;
+    border: 0.15em solid currentColor;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+}
+
+.checkbox-pass .lihat-password-p {
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: 20px;
+    position: absolute;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.form_input {
+    /*membuat lebar form penuh*/
+    box-sizing: border-box;
+    width: 80%;
+    padding: 10px;
+    font-size: 15pt;
+    padding-left: 15px;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+    outline: none;
+    padding-right: 15px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.form_input_40 {
+    /*membuat lebar form penuh*/
+    box-sizing: border-box;
+    width: 60%;
+    padding: 10px;
+    font-size: 12pt;
+    padding-left: 15px;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+    outline: none;
+    padding-right: 15px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.form_input_left {
+    /*membuat lebar form penuh*/
+    box-sizing: border-box;
+    width: 100%;
+    padding: 8px;
+    font-size: 12pt;
+    padding-left: 15px;
+    text-align: left;
+    border: 1px solid #e0e0e0;
+    outline: none;
+    padding-right: 15px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.sec-bantuan {
+    padding: 24px 0 30px;
+    position: relative;
+    margin: auto;
+    background-image: url('~/assets/image/backbantuan.png');
+    background-position: 22px 36px;
+    background-repeat: repeat-y;
+    background-size: 95%;
+    width: 80%;
+}
+
+.garis_pembatas {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 1px solid #e5e7e9;
+}
+
+.text_bantuan {
+    display: none;
+    color: #939393;
+    font-size: 14px;
+    text-align: left;
+    margin-top: 5px;
+}
+
+.icon_bantuan {
+    font-size: 24px;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.icon_bantuan:hover {
+    background: #f1f1f1;
+}
+
+.kotak-bantuan {
+    display: block;
+    position: relative;
+    margin: 16px;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 1px 6px 0 rgba(49, 53, 59, 0.12);
+    background-color: #FFFFFF;
+    cursor: pointer;
+    font-weight: normal;
+    width: 60%;
+    margin: auto;
+}
+
+/* ======== */
+/* Login Style Page */
+.body-login {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left: 70px;
+    padding-right: 70px;
+    position: absolute;
+    width: 100%;
+}
+
+.body-login .grid-2 {
+    display: grid;
+    grid-template-columns: 28% 70%;
+    gap: 20px;
+}
+
+.card-login {
+    background: #fff;
+    width: 100%;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: -2px 2px 19px -14px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -2px 2px 19px -14px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -2px 2px 19px -14px rgba(0, 0, 0, 0.75);
+}
+
+.card-login img {
+    width: 200px;
+    margin-top: -10px;
+}
+
+.card-login h3 {
+    font-size: 20px;
+    color: #324da1;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+}
+
+.card-login form {
+    margin-top: 20px;
+    padding: 10px;
+    color: black;
+}
+
+.card-login label {
+    font-size: 12pt;
+    margin-bottom: 5px;
+    color: black
+}
+
+.card-login form .form_login {
+    /*membuat lebar form penuh*/
+    box-sizing: border-box;
+    color: black;
+    width: 100%;
+    padding: 10px;
+    font-size: 11pt;
+    border: 1px solid #e0e0e0;
+    outline: none;
+    padding-right: 10px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.card-login form .grid-2-show-password {
+    display: grid;
+    color: black;
+    grid-template-columns: 90% 10%;
+    gap: 5px;
+}
+
+.card-login form .input-group-append {
+    color: #324da1;
+}
+
+.card-login form .input-group-append label {
+    margin-top: 30px;
+    font-size: 20px;
+    padding: 6px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.card-login form .grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.card-login .btn-login {
+    margin-top: 20px;
+    width: 100%;
+    background: #275aac;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.card-login .daftar-btn {
+    margin-top: 15px;
+    width: 100%;
+    background: #d10000;
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.card-login .btn-login:hover {
+    background: #0f4191;
+}
+
+.card-login .daftar-btn:hover {
+    background: #bd0000;
+}
+
+.garis-atas {
+    width: 100%;
+    height: 130vh;
+    background: #324da1;
+    background-image: url('https://assets.tokopedia.net/assets-tokopedia-lite/v2/zeus/kratos/149df038.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.gambar-login {
+    background-image :url('https://assets.tokopedia.net/assets-tokopedia-lite/v2/zeus/kratos/149df038.svg')
+}
+
+.login-anggota {
+    border-top: 1px solid #e4e4e4;
+    padding: 15px;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.login-anggota .grid-2 {
+    display: grid;
+    margin-top: 15px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.login-anggota p {
+    text-align: center;
+    font-size: 14px;
+}
+
+.login-anggota .btn-anggota {
+    width: 100%;
+    background: #324da1;
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.login-anggota .btn-anggota:hover {
+    background: #324da1;
+}
+
+.login-anggota .btn-bantuan {
+    width: 100%;
+    background: #9b9b9b;
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.login-anggota .btn-bantuan:hover {
+    background: #6b6b6b;
+}
+
+.katalog-ebook {
+    padding: 5px;
+    width: 100%;
+    height: auto;
+}
+
+.katalog-ebook .head-katalog .grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.katalog-ebook .head-katalog .grid-2 .all-view {
+    color: #fff;
+    text-decoration: none;
+    display: none;
+}
+
+.katalog-ebook h2 {
+    font-size: 28px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.katalog-ebook .grid-2-book {
+    display: grid;
+    grid-template-columns: 17% 83%;
+    margin-top: 15px;
+    gap: 20px;
+}
+
+.katalog-ebook .grid-2-book .lihat-semua img {
+    width: 100%;
+}
+
+.katalog-ebook .grid-2-book .card-ebook {
+    width: 100%;
+    height: 100%;
+    padding: 2px;
+    display: flex;
+}
+
+.katalog-ebook .grid-2-book .card-ebook .card-buku {
+    width: 25%;
+    height: 100%;
+    background: #fff;
+    margin-right: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    border: 1px solid #eeeeee;
+}
+
+.katalog-ebook .grid-2-book .card-ebook .card-buku img {
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+.katalog-ebook .grid-2-book .card-ebook .card-buku p {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 12px;
+    padding: 3px;
+    font-weight: 500;
+    border-radius: 15px;
+    color: #0060ae;
+    width: 100%;
+}
+
+.katalog-ebook .grid-2-book .card-ebook .card-buku:last-child {
+    margin-right: 0px;
+}
+
+.katalog-ebook .grid-2-book .card-ebook .card-buku:hover {
+    box-shadow: 0px 0px 19px -12px rgba(171, 171, 171, 0.72);
+    -webkit-box-shadow: 0px 0px 19px -12px rgba(171, 171, 171, 0.72);
+    -moz-box-shadow: 0px 0px 19px -12px rgba(171, 171, 171, 0.72);
+}
+
+.tab3 {
+    padding: 5px;
+    width: 100%;
+    margin-top: 15px;
+    height: auto;
+}
+
+.tab3 .grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.tab3 .grid-3 .card-tab {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #eeeeee;
+    background: #fff;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.tab3 .grid-3 .card-tab:hover {
+    box-shadow: -2px 2px 19px -14px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -2px 2px 19px -14px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -2px 2px 19px -14px rgba(0, 0, 0, 0.75);
+}
+
+.tab3 .grid-3 .card-tab h2 {
+    font-size: 22px;
+    padding: 12px;
+    text-align: center;
+    color: #0f4191;
+    font-weight: 500;
+}
+
+.tab3 .grid-3 .card-tab img {
+    width: 65%;
+    margin-top: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tab3 .grid-3 .card-tab p {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 15px;
+    padding: 6px;
+    color: #0060ae;
+    width: 100%;
+}
+
+.card-download {
+    padding: 20px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 400;
+    align-items: center;
+    margin-top: 20px;
+    color: #324da1;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    height: auto;
+}
+
+.card-download .grid-2 {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 10px;
+}
+
+.card-download .grid-2 img {
+    width: 150px;
+    margin-right: 10px;
+    float: right;
+}
+
+/* ======== */
+/* Register Page */
+.body-register {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-left: 230px;
+    padding-right: 230px;
+    position: absolute;
+    width: 100%;
+}
+
+.card-register {
+    background: #fff;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: -2px 2px 19px -14px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -2px 2px 19px -14px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -2px 2px 19px -14px rgba(0, 0, 0, 0.75);
+}
+
+.card-register img {
+    width: 250px;
+    margin-top: -10px;
+}
+
+.card-register h3 {
+    font-size: 24px;
+    color: #324da1;
+    margin-bottom: 10px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+}
+
+.card-register form {
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.card-register .grid-3 {
+    display: grid;
+    grid-template-columns: 33% 32% 33%;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.card-register label {
+    font-size: 12pt;
+    margin-bottom: 8px;
+    color: #09347a;
+}
+
+.card-register p {
+    font-size: 12px;
+    padding: 9px;
+    color: #09347a;
+}
+
+.card-register form .form_login {
+    /*membuat lebar form penuh*/
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    font-size: 11pt;
+    border: 1px solid #e0e0e0;
+    outline: none;
+    border-radius: 20px;
+}
+
+.card-register form .grid-2-show-password {
+    display: grid;
+    grid-template-columns: 90% 10%;
+    gap: 10px;
+}
+
+.card-register form .input-group-append {
+    color: #324da1;
+}
+
+.card-register form .input-group-append label {
+    margin-top: 35px;
+    font-size: 20px;
+    padding: 6px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.card-register form .grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.card-register form .theSelect {
+    display: none;
+}
+
+.btn-register {
+    margin-top: 15px;
+    width: 100%;
+    background: #275aac;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.footer-register {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.footer-register .link-login {
+    text-align: right;
+    text-decoration: none;
+    color: #324da1;
+}
+
+.footer-register .grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.check-box-register {
+    margin-left: 25px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+/* ======= */
+.card-video {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.card-kunjungan {
+    width: 90%;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.grid-2-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.grid-2-90 {
+    display: grid;
+    grid-template-columns: 90% 10%;
+    gap: 15px;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.grid-6 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+}
+
+.card-tab {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #eeeeee;
+    background: #fff;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.card-tab:hover {
+    box-shadow: -2px 2px 19px -14px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -2px 2px 19px -14px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -2px 2px 19px -14px rgba(0, 0, 0, 0.75);
+}
+
+.card-tab1 {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #eeeeee;
+    background: #fff;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.card-tab1:hover {
+    box-shadow: -2px 2px 19px -14px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -2px 2px 19px -14px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -2px 2px 19px -14px rgba(0, 0, 0, 0.75);
+}
+
+.card-tab1:hover .title-katalog-item {
+    display: block;
+    border-radius: 15px;
+    position: absolute;
+    padding: 15px;
+    text-align: center;
+    width: 19%;
+    height: auto;
+    background: #324da1;
+    opacity: 0.9;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+.title-katalog-item {
+    display: none;
+    opacity: 0;
+}
+
+.logo_perpus {
+    width: 100px;
+    margin: 10px;
+}
+
+.buku_katalog_perpus {
+    width: 80%;
+}
+
+.button-kunjungan {
+    font-size: 15px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 15px;
+    color: #324da1;
+    font-weight: 500;
+    margin: -5px;
+    width: 100%;
+    background: #fafafa;
+}
+
+.button-kunjungan:hover {
+    background: #f7fbff;
+}
+
+.button-detail {
+    font-size: 15px;
+    text-align: center;
+    padding: 8px;
+    border-radius: 15px;
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    text-decoration: none;
+    background: #0060ae;
+}
+
+.text_lupaPassword {
+    text-align: center;
+    font-size: 14px;
+}
+
+.button-simpan {
+    padding: 10px 40px 10px 40px;
+    border-radius: 20px;
+    background: #324da1;
+    color: #fff;
+}
+
+.body-form {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding-left: 230px;
+    padding-right: 230px;
+    position: absolute;
+    width: 100%;
+}
+
+.lupa-password {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-left: 450px;
+    padding-right: 150px;
+    position: absolute;
+    width: 80%;
+}
+
+.card-form {
+    background: #fff;
+    width: 100%;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: -2px 2px 19px -14px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -2px 2px 19px -14px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -2px 2px 19px -14px rgba(0, 0, 0, 0.75);
+}
+
+.card-form img {
+    width: 100px;
+    margin: 15px;
+}
+
+.card-form h3 {
+    font-size: 24px;
+    color: #324da1;
+    margin-bottom: 10px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+}
+
+.back_icon {
+    text-decoration: none;
+}
+
+.back_icon p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.area-btn-back {
+    max-width: 35px;
+}
+
+.area-btn-back i {
+    font-size: 30px;
+}
+
+.card-katalog-book {
+    background: #fff;
+    width: 100%;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: -2px 2px 19px -14px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -2px 2px 19px -14px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -2px 2px 19px -14px rgba(0, 0, 0, 0.75);
+}
+
+.card-katalog-book .head-katalog-detail {
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.card-katalog-book img {
+    width: 150px;
+    margin: 15px;
+}
+
+/* =============== */
+@media only screen and (max-width: 1124px) {
+    .grid-2-2 {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    header {
+        width: 100%;
+        background: #fff;
+        box-shadow: rgba(12, 40, 70, 0.1) 0px 2px 12px 0px;
+    }
+
+    .body-form {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .lupa-password {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 100px;
+        padding-right: 100px;
+        width: 100%;
+    }
+
+    .form_input_40 {
+        width: 70%;
+    }
+
+    .judul-tipe {
+        font-size: 26px;
+    }
+
+    .judul-tipe1 {
+        font-size: 20px;
+    }
+
+    .card-tipe {
+        width: 70%;
+        padding: 10px;
+    }
+
+    .card-tipe .teks-tipe {
+        padding: 20px;
+    }
+
+    .card-tipe .teks-tipe h3 {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .card-tipe .teks-tipe p {
+        font-size: 16px;
+    }
+
+    /* Style Lain */
+    .contact-bantuan {
+        width: 80%;
+        padding: 8px;
+    }
+
+    .kata-sambutan-bantuan {
+        font-size: 26px;
+    }
+
+    .sec-bantuan {
+        background-position: 15px 25px;
+        background-size: 95%;
+        width: 80%;
+    }
+
+    .kotak-bantuan {
+        width: 65%;
+    }
+
+    .grid-4 {
+        grid-template-columns: 33% 32% 33%;
+    }
+
+    .grid-6 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .card-tab1:hover .title-katalog-item {
+        width: 26%;
+        height: auto;
+        font-size: 16px;
+    }
+
+    /* ======== */
+    /* Login Style Page */
+    .body-login {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .body-login .grid-2 {
+        grid-template-columns: 100%;
+    }
+
+    .card-login h3 {
+        font-size: 18px;
+    }
+
+    .login-anggota .grid-2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 15px;
+    }
+
+    .katalog-ebook h2 {
+        font-size: 22px;
+        color: #09347a;
+    }
+
+    .katalog-ebook .grid-2-book {
+        grid-template-columns: 100%;
+        margin: -3px;
+    }
+
+    .katalog-ebook .grid-2-book .lihat-semua img {
+        display: none;
+    }
+
+    .katalog-ebook .grid-2-book .card-ebook {
+        padding: 0px;
+    }
+
+    .katalog-ebook .head-katalog .grid-2 .all-view {
+        color: #09347a;
+        text-decoration: none;
+        font-size: 14px;
+        display: block;
+    }
+
+    .card-download {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    .card-download .grid-2 {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .card-download .grid-2 .download-app {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .card-download .grid-2 img {
+        width: 200px;
+    }
+
+    .card-login form .grid-2-show-password {
+        grid-template-columns: 95% 5%;
+        gap: 10px;
+    }
+
+    .katalog-ebook .grid-2-book .card-ebook .card-buku p {
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    /* ======== */
+    /* Register Page */
+    .body-register {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .card-register img {
+        width: 200px;
+        margin-top: -10px;
+    }
+
+    .card-register h3 {
+        font-size: 20px;
+    }
+
+    .card-register form .grid-2-show-password {
+        grid-template-columns: 95% 5%;
+        gap: 10px;
+    }
+
+    .card-register form .grid-2 {
+        grid-template-columns: 100%;
+        margin-bottom: 15px;
+    }
+
+    .card-register .grid-3 {
+        grid-template-columns: 100%;
+    }
+
+    .card-katalog-book .head-katalog-detail {
+        font-size: 24px;
+    }
+
+    /* ========= */
+}
+
+@media only screen and (max-width: 770px) {
+    .grid-4 {
+        grid-template-columns: 50% 49%;
+    }
+
+    .grid-2 {
+        grid-template-columns: 100%;
+    }
+
+    .grid-2-2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-3 {
+        grid-template-columns: 100%;
+    }
+
+    .grid-6 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    header {
+        box-shadow: rgba(12, 40, 70, 0.1) 0px 2px 12px 0px;
+    }
+
+    .body-form {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .lupa-password {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .judul-tipe {
+        font-size: 22px;
+    }
+
+    .judul-tipe1 {
+        font-size: 14px;
+    }
+
+    .form_input_40 {
+        width: 80%;
+    }
+
+    .card-tipe {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .card-tipe .grid-2 {
+        display: grid;
+        grid-template-columns: 30% 70%;
+    }
+
+    .card-tipe img {
+        width: 75%;
+    }
+
+    .card-tipe .teks-tipe {
+        padding: 18px;
+    }
+
+    .card-tipe .teks-tipe h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .card-tipe .teks-tipe p {
+        font-size: 16px;
+    }
+
+    .card-tab1:hover .title-katalog-item {
+        width: 40%;
+        height: auto;
+        font-size: 16px;
+    }
+
+    .br-disabled-mobile {
+        display: none;
+    }
+
+    /* Style Lain */
+    .kata-sambutan-bantuan {
+        font-size: 24px;
+    }
+
+    .sec-bantuan {
+        background-position: 5px 15px;
+        background-size: 95%;
+        width: 95%;
+    }
+
+    .kotak-bantuan {
+        width: 70%;
+    }
+
+    /* ======== */
+    /* Login Style Page */
+    .body-login .grid-2 {
+        grid-template-columns: 100%;
+    }
+
+    .login-anggota .grid-2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 15px;
+    }
+
+    .katalog-ebook h2 {
+        font-size: 20px;
+        color: #09347a;
+    }
+
+    .katalog-ebook .grid-2-book {
+        grid-template-columns: 100%;
+        margin: -3px;
+    }
+
+    .katalog-ebook .grid-2-book .lihat-semua img {
+        display: none;
+    }
+
+    .katalog-ebook .grid-2-book .card-ebook {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding: 0px;
+    }
+
+    .katalog-ebook .grid-2-book .card-ebook .card-buku {
+        width: 100%;
+    }
+
+    .katalog-ebook .grid-2-book .card-ebook .card-buku img {
+        width: 90%;
+    }
+
+    .katalog-ebook .grid-2-book .card-ebook .card-buku p {
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .tab3 .grid-3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+    .tab3 .grid-3 .card-tab {
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+    .tab3 .grid-3 .card-tab h2 {
+        font-size: 20px;
+        padding: 7px;
+    }
+
+    .tab3 .grid-3 .card-tab img {
+        width: 80%;
+        margin-top: 15px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .tab3 .grid-3 .card-tab p {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .card-download {
+        text-align: center;
+    }
+
+    .card-download .grid-2 {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .card-download .grid-2 .download-app {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .card-download .grid-2 img {
+        width: 150px;
+    }
+
+    .card-login form .grid-2-show-password {
+        grid-template-columns: 90% 10%;
+        gap: 5px;
+    }
+
+    /* ======== */
+    /* Register Page */
+    .body-register {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .card-register .grid-3 {
+        grid-template-columns: 100%;
+    }
+
+    .card-register form .grid-2 {
+        grid-template-columns: 100%;
+        margin-bottom: 15px;
+    }
+
+    .card-register form .grid-2-show-password {
+        grid-template-columns: 90% 10%;
+        gap: 5px;
+    }
+
+    .card-katalog-book .head-katalog-detail {
+        font-size: 22px;
+    }
+
+    /* ========= */
+}
+
+@media only screen and (max-width: 400px) {
+    .grid-4 {
+        grid-template-columns: 100%;
+    }
+
+    .card-tab1:hover .title-katalog-item {
+        width: 83%;
+        height: auto;
+        font-size: 16px;
+    }
+
+    .card-tipe .grid-2 {
+        display: grid;
+        grid-template-columns: 30% 68%;
+    }
+
+    .card-tipe img {
+        width: 100%;
+    }
+
+    .card-tipe .teks-tipe {
+        padding: 10px;
+    }
+
+    .card-tipe .teks-tipe h3 {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    .card-tipe .teks-tipe p {
+        font-size: 14px;
+    }
+
+    .card-tipe .teks-tipe .hide {
+        display: none;
+    }
+
+    .body-login {
+        padding: 20px;
+    }
+
+    .tab3 .grid-3 .card-tab h2 {
+        font-size: 14px;
+    }
+
+    .katalog-ebook .grid-2-book .card-ebook .card-buku p {
+        font-size: 14px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .card-download .grid-2 img {
+        width: 120px;
+    }
+
+    .sec-bantuan {
+        background-image: none
+    }
+
+    .kotak-bantuan {
+        width: 90%;
+    }
+
+    .body-form {
+        padding: 20px;
+    }
+
+    .lupa-password {
+        padding: 20px;
+    }
+
+    .card-katalog-book .head-katalog-detail {
+        font-size: 20px;
+    }
+}
