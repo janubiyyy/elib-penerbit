@@ -52,15 +52,15 @@ plugins: [
     localStorage: true,
     redirect: {
       login: '/login',
-      logout: '/register',
+      logout: '/login',
       callback: '/',
-      home: '/Pengelola/Dashboard'
+      home: '/Dashboard'
     },
     strategies: {
       local: {
         endpoints: {
-          login: { url: 'auth/login', method: 'post', propertyName: 'data.token' },
-          user: { url: 'user/profile/pustakawan', method: 'get', propertyName: 'data' },
+          login: { url: 'auth/loginPenerbit', method: 'post', propertyName: 'token' },
+          user: { url: 'penerbit/user/profile', method: 'get', propertyName: 'data' },
           logout: false
         },
         tokenRequired: true,
@@ -71,7 +71,8 @@ plugins: [
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    baseUrl: 'https://elibx.jaja.id/'
+    // baseUrl: 'https://elibx.jaja.id/'
+    baseUrl: 'http://192.168.150.40:2000/'
   },
 
   router: {

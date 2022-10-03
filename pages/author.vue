@@ -76,8 +76,8 @@
       <span>
         <b-btn v-b-modal.modal-1 variant="warning">Edit</b-btn></span>
        
-      <span><b-btn v-b-modal.modal-2 variant="danger">Delete</b-btn> </span>
-      
+      <!-- <span><b-btn v-b-modal.modal-2 variant="danger">Delete</b-btn> </span>
+       -->
     </template>
   <template v-slot:cell(status)="{ item }">
     <span>

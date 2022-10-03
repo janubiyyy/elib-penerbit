@@ -7,11 +7,11 @@
             <img src="~/assets/image/jaja-.png" alt="Logo Brand" />
             <h3 class="mt-3 text-left">Login Admin</h3>
           </center>
-          <form>
             <label>Email</label>
             <input
+              v-model="email"
               type="email"
-              class="form_login"
+              class="form_login text-dark"
               placeholder="Masukkan Email Anda"
             />
 
@@ -19,10 +19,11 @@
               <div>
                 <label>Password</label>
                 <input
+                v-model="password"
                   id="password"
                   type="password"
                   autocomplete="off"
-                  class="form_login"
+                  class="form_login text-dark"
                   placeholder="Masukkan Password Anda"
                 />
               </div>
@@ -46,14 +47,15 @@
               style="text-decoration: none"
               ><div class="daftar-btn">Register</div></a
             > -->
-          </form>
 
           <div class="login-anggota">
             <div class="grid-3">
-            <nuxt-link to="/Dashboard"
+            <button
+                @click="login"
+                type="button"
                 style="text-color: #21ff21"
                 class="btn-anggota">
-                <div>Login</div></nuxt-link>
+                <div>Login</div></button>
 
               <NuxtLink
                 to="/register"
@@ -165,10 +167,49 @@
   </div>
 </template>
 <script>
-  export default {
-      auth: 'guest',
-  };
-  </script>
+import { mapGetters } from "vuex";
+import Swal from "sweetalert2";
+export default {
+    auth: 'guest',
+  data() {
+    return {
+      email: "",
+      password: "",
+      error: null,
+    };
+  },
+  methods: {
+    async login() {
+      try {
+        await this.$auth.loginWith("local", {
+          data: {
+            email: this.email,
+            password: this.password,
+          },
+        });
+      } catch (error) {
+        Swal.fire({
+          icon: 'warning',
+          title: 'Warning',
+          text: error.response.data.status.message,
+        })
+        // const errorRes = error.response.data.errors;
+        // let getError = [];
+        // errorRes.map((item) => {
+        //   getError.push(item.message);
+        // });
+
+        // let split = getError.toString();
+        // const newStr = split.replaceAll(",", "<br/>");
+
+        // console.log(newStr);
+
+        // this.$swal.fire("Warning", newStr, "warning");
+      }
+    },
+  }
+};
+</script>
 
 <style scoped>
 @import "boxicons";

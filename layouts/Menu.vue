@@ -34,13 +34,13 @@
               </NuxtLink>
             </li>
           </ul> -->
-          <ul>
+          <!-- <ul>
             <li>
               <NuxtLink to="/transaksi" class="link-a">
                 <i class='bx bx-line-chart'></i> Transaksi
               </NuxtLink>
             </li>
-          </ul>
+          </ul> -->
           <div class="dropdown ">
             <div class="dropbtn">
               <i class='bx bx-book-alt icon-side'></i> Katalog
@@ -141,7 +141,7 @@
                 >
               </li>
               <li>
-                <i class="bx bx-log-out"></i><NuxtLink to="/login">Logout</NuxtLink>
+                <i class="bx bx-log-out"></i><button type="button" @click="logout">Logout</button>
               </li>
             </ul>
           </div>
@@ -164,6 +164,7 @@
 </template>
 
 <script src="~/assets/js/Menu.js"></script>
+
 
 <style scoped>
 @import "boxicons";
