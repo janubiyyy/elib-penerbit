@@ -1,32 +1,48 @@
 <template>
     <div>
     <b-card-group deck>
-      <b-card bg-variant="light" text-variant="red" header="Total Penjualan" class="text-center" >
-        <div class="row justify-content-md-center">
-        <i class="bx bxs-shopping-bags" style="font-size: 3rem; color: #ffc107"></i> 
-        <h1>100 </h1> 
+      <b-card >
+<div class="row justify-content-md-center">
+        <i class="bx bx-cart-add" style="font-size: 5rem; color: #ffc107"></i> 
         </div>
+        
+                <div class="mt-1">
+<b-button block variant="outline-secondary"> {{loggedInUser}}
+  Total Penjualan <i class="bx bx-right-arrow-circle" style="font-size: 1rem;"></i></b-button></div>
       </b-card>
+  <b-card >
+<div class="row justify-content-md-center">
+        <i class="bx bx-paper-plane" style="font-size: 5rem; color: #42f5b0"></i> 
+        </div>
 
-      <b-card bg-variant="light" text-variant="black" header="Total Pesanan" class="text-center">
-<div class="row justify-content-md-center">
-         <i class="bx bxs-cart" style="font-size: 3rem; color: #fd7e14"></i> 
-        <h1>100 </h1> 
-        </div>
-      </b-card>
+              <div class="mt-1">
+                <b-button block variant="outline-secondary">Total Pesanan <i class="bx bx-right-arrow-circle"
+                    style="font-size: 1rem;"></i></b-button>
+              </div>
+              </b-card>
+              <b-card>
+                <div class="row justify-content-md-center">
+                  <i class="bx bxs-group" style="font-size: 5rem; color: #17a2b8"></i>
+                </div>
+              
+                <div class="mt-1">
+                  <b-button block variant="outline-secondary">Total Pengunjung <i class="bx bx-right-arrow-circle"
+                      style="font-size: 1rem;"></i></b-button>
+                </div>
+              </b-card>
+<b-card>
+  <div class="row justify-content-md-center">
+    <i class="bx bxs-show" style="font-size: 5rem; color: #9c9c9c"></i>
+  </div>
 
-      <b-card bg-variant="light" text-variant="black" header="Total Pengunjung" class="text-center">
-<div class="row justify-content-md-center">
-        <i class="bx bxs-group" style="font-size: 3rem; color: #17a2b8"></i> 
-        <h1>100 </h1> 
-        </div>
-      </b-card>
-      <b-card bg-variant="light" text-variant="black" header="Produk Dilihat" class="text-center">
-<div class="row justify-content-md-center">
-       <i class="bx bxs-show" style="font-size: 3rem; color:#2ecc71 "></i> 
-        <h1>100 </h1> 
-        </div>
-      </b-card>
+  <div class="mt-1">
+    <b-button block variant="outline-secondary">Produk Dilihat<i class="bx bx-right-arrow-circle"
+        style="font-size: 1rem;"></i></b-button>
+  </div>
+</b-card>
+
+    
+    
     </b-card-group>
     <br>
     <div class="row d-flex justify-content-center">
@@ -47,17 +63,55 @@
     </div>
 
     <div class="col-md-6">
-       <b-card bg-variant="light" text-variant="red" header="Produk Terlaris" class="text-center " >
+       <b-card bg-variant="light" text-variant="red" header="TOP 5 Pencarian Buku Sering Dibaca 2022" class="text-center " >
   <div style=" width:570px; height:600px; ">
    <div>
- <div>
-    <div v-for="bar in bars" class="row mb-4">
+
+  
+    <!-- <div v-for="bar in bars" class="row mb-4">
       <div class="col-sm-3">{{ bar.name }}:</div>
       <div class="col-sm-12 pt-1">
         <b-progress :value="bar.value" :variant="bar.variant" :key="bar.variant"></b-progress>
       </div>
-    </div>
-  </div>
+    </div> -->
+<div>
+    <b-list-group style="max-width: 570px;">
+      <b-list-group-item class="d-flex align-items-center">
+        <b-avatar rounded="sm" variant="info" src="https://cdn.eurekabookhouse.co.id/ebh/product/all/RETHINKING%20DISCIPLINE.jpg" class="mr-3" size="6rem"></b-avatar>
+        <span class="mr-auto">RETHINKING DISCIPLINE </span>
+        <b-badge variant="success"><i class='bx bxs-show '></i> 900</b-badge>
+      </b-list-group-item>
+      <b-list-group-item class="d-flex align-items-center">
+      <b-avatar rounded="sm" variant="info"
+        src="https://cdn.eurekabookhouse.co.id/ebh/product/all/sister.jpg" class="mr-3" size="6rem">
+      </b-avatar>
+        <span class="mr-auto">SISTER FILLAH, YOULL NEVER BE ALONE</span>
+        <b-badge  variant="success"><i class='bx bxs-show'></i> 830</b-badge>
+      </b-list-group-item>
+      <b-list-group-item class="d-flex align-items-center">
+      <b-avatar rounded="sm" variant="info" src="https://cdn.eurekabookhouse.co.id/ebh/product/all/sang%20pemanah.jpg" class="mr-3"
+        size="6rem">
+      </b-avatar>
+        <span class="mr-auto">Sang Pemanah</span>
+        <b-badge variant="success"><i class='bx bxs-show '></i> 700</b-badge>
+      </b-list-group-item>
+      <b-list-group-item class="d-flex align-items-center">
+      <b-avatar rounded="sm" variant="info" src="https://cdn.eurekabookhouse.co.id/ebh/product/all/matahari.jpg"
+        class="mr-3" size="6rem">
+      </b-avatar>
+        <span class="mr-auto">Matahari Terbenam</span>
+        <b-badge  variant="success"><i class='bx bxs-show'></i> 650</b-badge>
+      </b-list-group-item>
+        <b-list-group-item class="d-flex align-items-center">
+        <b-avatar rounded="sm" variant="info" src="https://cdn.eurekabookhouse.co.id/ebh/product/all/KBK-(1068)%20TOKO%20KELONTONG%20SELATAN.jpg"
+          class="mr-3" size="6rem">
+        </b-avatar>
+          <span class="mr-auto">TOKO KELONTONG SELATAN</span>
+          <b-badge  variant="success"><i class='bx bxs-show'></i>  300</b-badge>
+        </b-list-group-item>
+   
+    </b-list-group>
+</div>
 </div>
 
         </div>
@@ -66,7 +120,7 @@
       
     </div>
   <div class=" mt-3 row d-flex justify-content-center">
-    <div class="col-md-6">
+    <div class="col-md-6 d-flex justify-content-center">
       <b-card bg-variant="light" text-variant="red" header="Jenis Kelamin Pembeli" class="text-center  ">
         <div class="center" style=" width:370px; " >
           <client-only>
@@ -80,7 +134,7 @@
   
     </div>
   
-    <div class="col-md-6">
+    <!-- <div class="col-md-6">
       <b-card bg-variant="light"  header="Tipe Pembeli" class="text-center    ">
         <div style=" width:370px; align: center;   ">
           <client-only>
@@ -89,7 +143,7 @@
         </div>
       
       </b-card>
-    </div>
+    </div> -->
   
   </div>
     
@@ -100,8 +154,9 @@
 </template>
 
 <script>
+import { mapGetters } from "vuex";
   export default {
-      auth: 'guest',
+      auth: 'auth',
       
       layout: "Menu",
       data() {
@@ -151,8 +206,8 @@
           datasets: [
             {
               backgroundColor: [
-                '#f54242',
-                '#87b7ff',
+                '#42f5b0',
+                '#ffc107',
                 
               ],
               data: [40, 60],
@@ -188,6 +243,9 @@
         timer: null
        }
     },
+  computed: {
+    ...mapGetters(["isAuthenticated", "loggedInUser"]),
+  },
    
     beforeDestroy() {
       clearInterval(this.timer)

@@ -68,7 +68,6 @@ export default {
                     data: {
                         email: this.email,
                         password: this.password,
-                        role: "pustakawan",
                     },
                 });
 
